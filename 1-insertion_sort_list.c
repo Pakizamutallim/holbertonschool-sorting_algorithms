@@ -2,9 +2,8 @@
 
 
 /**
- * _swap - Swaps two nodes of doubly linked list
+ * insertion_sort_list - sorts a doubly linked list of integers
  *
- * @node: node base to change
  * @list: double link list head
  *
  * Return: No Return

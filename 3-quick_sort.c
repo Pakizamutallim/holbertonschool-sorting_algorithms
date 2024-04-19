@@ -29,13 +29,13 @@ void quick_sort(int *array, size_t size)
 
 void lomuto_sort(int *array, size_t size, int left, int right)
 {
-	int t;
+	int l_p = 0;
 
-	if (right - left > 0)
+	if (left < right)
 	{
-		t = lomuto_partition(array, size, left, right);
-		lomuto_sort(array, size, left, t - 1);
-		lomuto_sort(array, size, t + 1, right);
+		l_p = lomuto_partition(array, left right, size);
+		lomuto_sort(array, left, l_p - 1, size);
+		lomuto_sort(array, l_p + 1, higher, size);
 	}
 }
 
